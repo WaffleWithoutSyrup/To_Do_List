@@ -1,5 +1,5 @@
 let pregunta;
-let lista_tareas="";
+let lista_tareas=[];
 
 alert("BienvenidX")
 
