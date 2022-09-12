@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+title{
+    text-align: center;
+}
+
+body{
+    background-color: #F9E8DC;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Pangolin', cursive;
+    color: #020910;
+    background-color: #a64302;
+    padding: 10px;
+    margin: 10px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+.calendario{
+    background-color: #efb080;
+    d
+}
