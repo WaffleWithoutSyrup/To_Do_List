@@ -1,37 +1,15 @@
-let pregunta;
-let lista_tareas=[];
+const personal_tab =getElementById('personal_tab')
+const familia_tab =getElementById('familia_tab')
+const trabajo_tab =getElementById('trabajo_tab')
+const casa_tab =getElementById('casa_tab')
+const otros_tab =getElementById('otros_tab')
 
-alert("BienvenidX")
+const personal_cont =getElementById('personal_cont')
+const familia_cont =getElementById('familia_cont') 
+const trabajo_cont =getElementById('trabajo_cont')
+const casa_cont =getElementById('casa_cont')
+const otros_cont =getElementById('otros_cont')
 
-function preguntar() {
-    return (pregunta=prompt('¿Tienes alguna tarea? Responde SI o NO'))
-}
+let chose = 1
 
-function registro_tareas() {
-    nueva_tarea= prompt("Escribe tu tarea, si no tienes más, escribe TERMINAR")
-    lista_tareas.push(nueva_tarea);
-    if (nueva_tarea !== "TERMINAR" && lista_tareas !== "terminar") {
-        return console.log(lista_tareas);}
-}
-
-for (let i=0; i < 1; i++) {
-    preguntar();
-    if (pregunta == "SI" || pregunta == "si") {
-        for(let i=0; i<8; i++){
-            if (lista_tareas === "TERMINAR" || lista_tareas === "terminar"){
-                console.log("--Proceso finalizado--");
-                break;
-            }
-            else{
-                registro_tareas();
-            }
-        }
-    }
-    else if (pregunta=="NO" || pregunta=="no"){
-        alert("Que tengas un buen día");
-        break;
-    }
-    else{
-        alert("No se puede proceder");
-    }
-}
+const cambiar_pestana
