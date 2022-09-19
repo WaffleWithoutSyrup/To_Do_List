@@ -19,58 +19,20 @@ h1{
     padding: 10px;
     margin: 10px;
 }
-.to_do_list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    width: 600px;
-}
-.opcion{
-    background-color: #a64302;
-    color: #020910;
-    margin: 20px;
-    list-style: none;
-    padding: 10px;
-    border: #3d1f16 2px solid;
-    border-radius: 10px;
-    text-align: center;
-    font-family: 'Pangolin', cursive;
-    cursor: pointer;
-}
-
-.opcion_active{
-    background-color: #c55911;
-}
-.listas_distintas{
-    background-color: #efb080;
-    border-radius: 10px;
-    border: 2px #3d1f16 solid;
-    padding: 20px;
-    overflow: hidden;
-    width: 100%;
-    height: 85%;
-}
 #fecha{
     font-family: 'Pangolin', cursive;
     color: #3d1f16;
     text-align: center;
     padding: 1px;
 }
-.content{
-    width: 100%;
-    height: 100%;
-    color: #020910;
-    display: none;
-    padding: 20px;
-}
-.content_active{
-    display: block;
-}
-.content p{
-    font-family: 'Klee One', cursive;
-}
 
+#
+#
+#
+#
+#
+#
+#
 
 /*.calendario{
     background-color: #efb080;

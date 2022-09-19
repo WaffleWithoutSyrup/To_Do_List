@@ -10,6 +10,23 @@ const trabajo_cont =getElementById('trabajo_cont')
 const casa_cont =getElementById('casa_cont')
 const otros_cont =getElementById('otros_cont')
 
-let chose = 1
+let cambio = 1
 
-const cambiar_pestana
+const cambiar_pestana = () => {
+    cambio == 1 ? {
+        personal_tab.classList.value = 'personal_tab opcion_active',
+        personal_cont.classList.value = 'personal_cont content_active'
+    }
+    : {
+        personal_tab.classList.value = 'personal_tab',
+        personal_cont.classList.value = 'personal_cont'
+    }
+    cambio == 2 ? {
+        familia_tab.classList.value = 'familia_tab opcion_active',
+        familia_cont.classList.value = 'familia_cont content_active'
+    }
+    : {
+        familia_tab.classList.value = 'familia_tab',
+        familia_cont.classList.value = 'familia_cont'
+    }
+}
