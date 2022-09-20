@@ -11,6 +11,8 @@ body{
     background-color: #F9E8DC;
     display: flex;
     flex-direction: column;
+    line-height: 1.5;
+    
 }
 h1{
     font-family: 'Pangolin', cursive;
@@ -18,6 +20,10 @@ h1{
     background-color: #a64302;
     padding: 10px;
     margin: 10px;
+
+}
+main{
+    padding: 50px;
 }
 #fecha{
     font-family: 'Pangolin', cursive;
@@ -26,13 +32,102 @@ h1{
     padding: 1px;
 }
 
-#
-#
-#
-#
-#
-#
-#
+.tab-content{
+    background-color: #efb080;
+    padding: 60px;
+}
+button{
+    font-family: 'Pangolin', cursive;
+    background-color: #a64302;
+    color: #3d1f16;
+    font-size: 50px;
+}
+
+  .container {
+    margin: 20px;
+    width:600px;
+    padding: 20px;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  input {
+    padding: 15px 10px;
+    outline: none;
+    width: 400px;
+  }
+  
+  .li-container {
+    background-color: white;
+    width: 100%;
+    color: darkslategray;
+    margin-top: 20px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  li p {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #e31746;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+  }
+  
+  .btn-delete:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+  }
+  
+  .agregar{
+    padding: 5px 15px;
+    border: none;
+    color: #F9E8DC;
+    font-family: 'Pangolin', cursive;
+    background-color: #a64302;
+    font-size: 1.4rem;
+    outline: none;
+  }
+  
+  .agregar:hover {
+    cursor: pointer;
+    background-color: #3d1f16;
+  }
+  
+  .empty {
+    color: darkslategrey;
+  }
 
 /*.calendario{
     background-color: #efb080;

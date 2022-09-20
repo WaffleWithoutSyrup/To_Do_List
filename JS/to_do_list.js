@@ -1,32 +1,21 @@
-const personal_tab =getElementById('personal_tab')
-const familia_tab =getElementById('familia_tab')
-const trabajo_tab =getElementById('trabajo_tab')
-const casa_tab =getElementById('casa_tab')
-const otros_tab =getElementById('otros_tab')
+const input= document.querySelector("input");
+const agregar =document.querySelector(".agregar");
+const ul = document.querySelector("ul");
+const vacio= document.querySelector(".sin-tareas");
 
-const personal_cont =getElementById('personal_cont')
-const familia_cont =getElementById('familia_cont') 
-const trabajo_cont =getElementById('trabajo_cont')
-const casa_cont =getElementById('casa_cont')
-const otros_cont =getElementById('otros_cont')
+agregar.addEventListener('click', (e)=>{
+    e.preventDefault();
+    const text = input.value;
+    const li = document.createElement('li');
+    p.textContent = text;
 
-let cambio = 1
+    li.appendChild(p);
+    ul.appendChild(li);
+});
 
-const cambiar_pestana = () => {
-    cambio == 1 ? {
-        personal_tab.classList.value = 'personal_tab opcion_active',
-        personal_cont.classList.value = 'personal_cont content_active'
-    }
-    : {
-        personal_tab.classList.value = 'personal_tab',
-        personal_cont.classList.value = 'personal_cont'
-    }
-    cambio == 2 ? {
-        familia_tab.classList.value = 'familia_tab opcion_active',
-        familia_cont.classList.value = 'familia_cont content_active'
-    }
-    : {
-        familia_tab.classList.value = 'familia_tab',
-        familia_cont.classList.value = 'familia_cont'
-    }
+function add_delete_boton(){
+    const delete_btn = document.createElement('button');
+    delete_btn.textContent = "x";
+    delete_btn.className= "eliminar";
+    delete_btn.addEventListener('click')
 }
