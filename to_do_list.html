@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Pangolin&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos_todo_list.css">
-    <link rel="stylesheet" href="./JS/to_do_list.js">
 </head>
 <body>
     <header>
@@ -19,99 +18,24 @@
         </section>
     </header>
     <main>
-
-    <div class="d-flex align-items-start cuadro">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-
-            <button class="nav-link active" id="personal_tab" data-bs-toggle="pill" data-bs-target="#personal_cont" type="button" role="tab" aria-controls="personal_cont" aria-selected="true">PERSONAL</button>
-
-            <button class="nav-link" id="familia_tab" data-bs-toggle="pill" data-bs-target="#familia_cont" type="button" role="tab" aria-controls="familia_cont" aria-selected="false">FAMILIA</button>
-
-            <button class="nav-link" id="trabajo_tab" data-bs-toggle="pill" data-bs-target="#trabajo_cont" type="button" role="tab" aria-controls="trabajo_cont" aria-selected="false">TRABAJO</button>
-
-            <button class="nav-link" id="casa_tab" data-bs-toggle="pill" data-bs-target="#casa_cont" type="button" role="tab" aria-controls="casa_cont"   aria-selected="false">CASA</button>
-
-            <button class="nav-link" id="otros_tab" data-bs-toggle="pill" data-bs-target="#otros_cont" type="button" role="tab" aria-controls="otros_cont"   aria-selected="false">OTROS</button>
-
-        </div>
-
-        <div class="tab-content" id="v-pills-tabContent">
-            <div id="fecha">
-                <h3>fecha</h3>
+        <div class="to-do-list">
+            <div class="input-btn">
+                <input type="text">
+                <button onclick="addTask()">Agregar tarea</button>
             </div>
-            <div class="tab-pane fade show active container" id="personal_cont" role="tabpanel" aria-labelledby="personal_tab">personal
-                <div class="search">
-                    <form action="">
-                        <input type="text" placeholder="Agregar tarea">
-                        <button class="agregar">+</button>
-                    </form>
-                </div>
-                <div class="li-container">
-                    <ul>
-
-                    </ul>
-                </div>
-                <div class="sin-tareas">
-                    <p>Nada pendiente</p>
-                </div>
+            <div class="list-tasks">
+                <ul>
+                    
+                </ul>
             </div>
+            <button class="remove-all" onclick="deleteAll()">eliminar todas</button>
 
-            <div class="tab-pane fade " id="familia_cont" role="tabpanel" aria-labelledby="familia_tab">familia</div>
-
-            <div class="tab-pane fade" id="trabajo_cont" role="tabpanel" aria-labelledby="trabajo_tab">trabajo</div>
-
-            <div class="tab-pane fade" id="casa_cont" role="tabpanel" aria-labelledby="casa_tab">casa</div>
-
-            <div class="tab-pane fade" id="otros_cont" role="tabpanel" aria-labelledby="otros_tab">otros</div>
-
-  </div>
-</div>
-
-
-
-
-
-
-
-        
-<!--
-            
-            <div class="tareas_diarias">
         </div>
 
 
 
-
-
-
-
-
-        <div id="calendario">
-            <div class="cal_info">
-                <div class="calen_prev">&#9664;</div>
-                <div class="calen_mes">Septiembre</div>
-                <div class="calen_año">2022</div>
-                <div class="calen_next">&#9654;</div>
-            </div>
-            <dv class="cal_semana">
-                <div class="cal_dia cal_item">LUN</div>
-                <div class="cal_dia cal_item">MAR</div>
-                <div class="cal_dia cal_item">MIE</div>
-                <div class="cal_dia cal_item">JUE</div>
-                <div class="cal_dia cal_item">VIE</div>
-                <div class="cal_dia cal_item">SAM</div>
-                <div class="cal_dia cal_item">DOM</div>
-            </dv>
-            <div class="cal_dias" id="dias"></div>
-        </div> -->
     </main>
-
-
-
-
-
-
-    <!-- <script src="./JS/to_do_list.js"></script> -->
 </body>
+<script src="./JS/to_do_list.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
