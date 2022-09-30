@@ -17,27 +17,66 @@
             <h1>To Do List</h1>
         </section>
     </header>
-    <main>
-        <div class="to-do-list">
-            <div class="input-btn">
-                <input type="text">
-                <button onclick="addTask()">Agregar tarea</button>
-            </div>
-            <div class="list-tasks">
-                <ul>
-                    <li>tareas</li>
-                    <li>tareas</li>
-                    <li>tareas</li>
-                </ul>
-            </div>
-            <button class="remove-all" onclick="deleteAll()">eliminar todas</button>
+    <main class="container">
+        <section class="contenidoListas container col-10">
+                <div class="d-flex col-9">
+                    <div class="nav flex-column nav-pills me-3 col-4" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="padding: 20px;">
+                        <button class="nav-link active personal-tab" id="v-pills-personal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-personal" type="button" role="tab" aria-controls="v-pills-personal" aria-selected="true">personal</button>
 
-        </div>
+                        <button class="nav-link family-tab" id="v-pills-family-tab" data-bs-toggle="pill" data-bs-target="#v-pills-family" type="button" role="tab" aria-controls="v-pills-family" aria-selected="false">Family</button>
+
+                        <button class="nav-link work-tab" id="v-pills-work-tab" data-bs-toggle="pill" data-bs-target="#v-pills-work" type="button" role="tab" aria-controls="v-pills-work" aria-selected="false">work</button>
+
+                        <button class="nav-link house-tab" id="v-pills-house-tab" data-bs-toggle="pill" data-bs-target="#v-pills-house" type="button" role="tab" aria-controls="v-pills-house" aria-selected="false">house</button>
+                        
+                        <button class="nav-link others-tab" id="v-pills-others-tab" data-bs-toggle="pill" data-bs-target="#v-pills-others" type="button" role="tab" aria-controls="v-pills-others" aria-selected="false">others</button>
+                    </div>
+
+                    <div class="tab-content col-8" id="v-pills-tabContent">
+                        <div class="dateInList" id="dateInList">fecha</div>
+
+                        <div class="tab-pane fade show active" id="v-pills-personal" role="tabpanel" aria-labelledby="v-pills-personal-tab">
+                            
+
+
+gfg
+
+
+
+
+
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-family" role="tabpanel" aria-labelledby="v-pills-family-tab">Family</div>
+
+                        <div class="tab-pane fade" id="v-pills-work" role="tabpanel" aria-labelledby="v-pills-work-tab">...</div>
+
+                        <div class="tab-pane fade" id="v-pills-house" role="tabpanel" aria-labelledby="v-pills-house-tab">...</div>
+
+                        <div class="tab-pane fade" id="v-pills-others" role="tabpanel" aria-labelledby="v-pills-others-tab">others</div>
+                    </div>
+                  </div>
+                
+                  <div class="lista-diaria col-3">
+                    <ul>
+                        <li>tarea diaria</li>
+                    </ul>
+                  </div>
+        </section>
+
+        <section class="claveCalendario col-2">
+            <div>
+                <h3 class="clave">
+                    CLAVE
+                </h3>
+            </div>
+        </section>
 
 
 
     </main>
 </body>
-<script src="./JS/to_do_list.js"></script>
+<!-- <script src="./JS/to_do_list.js"></script> -->
+<script src="./JS/fecha.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

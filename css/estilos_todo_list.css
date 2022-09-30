@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-title{
-    text-align: center;
-}
 
 body{
     background-color: #F9E8DC;
@@ -19,4 +16,60 @@ h1{
     color: #020910;
     padding: 10px;
     margin: 10px;
+    text-align: left;
+    background: #a64302;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0.25rem;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.contenidoListas{
+    background: #e0c3af;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+.nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 100%;
+}
+.nav-link {
+    color: #020910;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-link:hover{
+    color: #3c1e16;
+    background-color: #d676365b;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #eaead7;
+    background-color: #a64302;
+}
+.nav-pills{
+    border-bottom: 25px;
+}
+.d-flex{
+    height: 500px;
+    font-family: 'Pangolin', cursive;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tab-content{
+    background-color: aqua;
+    
 }
