@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #F9E8DC;
+    background-color: #f9e8dc;
     display: flex;
     flex-direction: column;
     line-height: 1.5;
@@ -15,23 +15,20 @@ h1{
     font-family: 'Pangolin', cursive;
     color: #020910;
     padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 10px;
     text-align: left;
     background: #a64302;
     height: fit-content;
     width: fit-content;
-    border-radius: 0.25rem;
+    border-radius: 25px;
 }
 main{
     display: flex;
     flex-direction: row;
 }
-.contenidoListas{
-    background: #e0c3af;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-}
+
 .nav {
     display: flex;
     padding-left: 0;
@@ -70,6 +67,67 @@ main{
 }
 
 .tab-content{
-    background-color: aqua;
+    background-color: #efb080;
+    height: 480px;
+    border-radius: 15px;
+    padding: 15px;
+}
+/*fecha*/
+.dateInList{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/*listas*/
+.contenidoListas{
+    background: #ffd2b4c5;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
     
+}
+
+.list-tasks{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    list-style: url(./media2/puntito.png);
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    background-color: #eaead7;
+    width: 90%;
+}
+.input-btn{
+    text-align: center;
+}
+.agregar-btn{
+    border: none;
+    background: none;
+    text-align: center;
+}
+.plus-btn{
+    color: #3c1e16;
+}
+
+
+/*esto causa problemas*/
+.borrar-btn{
+    color: aqua;
+}
+
+
+
+
+.remove-all{
+    border: none;
+    border-radius: 10px;
+    background-color: #3c1e16;
+    color: #eaead7;
+    padding: 5px;
 }

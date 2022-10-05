@@ -49,7 +49,8 @@ function createHTML() {
     if (tasks.length > 0) {
         tasks.forEach(task => {
             const li = document.createElement('li');
-            li.innerHTML = `${task.task} <span task-id="${task.id}" >X</span>`;
+            //puse un class acá, y puede que m esté dañando todo :'c
+            li.innerHTML = `${task.task} <span task-id="${task.id}" class="borrar-btn">X</span>`;
 
             listTasks.appendChild(li);
         });
@@ -77,3 +78,5 @@ function showError(error) {
 function clearHTML() {
     listTasks.innerHTML='';
 }
+
+

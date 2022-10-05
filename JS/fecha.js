@@ -7,3 +7,5 @@ console.log(`${dia[fecha.getDay()]}, ${fecha.getDate()}, ${mes[fecha.getMonth()]
 
 const fechaHtml= document.getElementById('#dateInList')
 console.log(fechaHtml);
+
+const dateForList= document.getElementById('dateInList')
